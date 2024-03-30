@@ -1,0 +1,3137 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assests/Vendor/fontawsome/css/all.css">
+    <link rel="stylesheet" href="Assests/Vendor/fontawsome/css/sharp-light.css">
+    <link rel="stylesheet" href="Assests/Vendor/fontawsome/css/sharp-thin.css">
+    <link rel="stylesheet" href="Assests/Vendor/Owl-Carousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="Assests/Vendor/Owl-Carousel/dist/assets/owl.theme.default.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: IranYekan;
+            src: url(Assests/Font/IranYekan/Yekan.ttf)
+        }
+
+        @font-face {
+            font-family: IranYekan-Bold;
+            src: url(Assests/Font/IranYekan/Yekan-bold.ttf)
+        }
+
+        @font-face {
+            font-family: IranYekan-Black;
+            src: url(Assests/Font/IranYekan/Yekan-black.ttf)
+        }
+
+        @font-face {
+            font-family: Morabba-Bold;
+            src: url(Assests/Font/Morabba-Bold.ttf);
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(17, 33, 55, 1);
+        }
+
+        nav {
+            background-color: #f5c34b;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: IranYekan-Bold;       
+        }
+
+        nav > div:nth-of-type(1) {
+            width: calc(100% - 88px);
+            padding: 20px 44px 20px 44px;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav > div:nth-of-type(1) > a {
+            font-size: 17px;
+            font-weight: 900;
+        }
+
+        nav > div:nth-of-type(1) > a i {
+            display: none;
+        }
+
+        nav  > div:nth-of-type(1) > div {
+            width: 37.8%;
+            height: 50px;
+            margin-right: 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        nav > div:nth-of-type(1) > div div {
+            background-color: white;
+            width: calc(100% - 50px);
+            height: 100%;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav > div:nth-of-type(1) > div div input[type="search"] {
+            border: none;
+            outline: none;
+            width: calc(70% - 40px);
+            padding: 0 20px 0 20px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            font-family: IranYekan-Bold;
+            font-size: 15px;
+        }
+
+        input[type="search"]::placeholder {
+            color: rgba(17, 33, 55, 1);
+            opacity: 1;
+        }
+
+        nav > div:nth-of-type(1) > div div select {
+            border: none;
+            background-color: white;
+            font-family: IranYekan-Bold;
+            font-size: 15px;
+            color: rgba(17, 33, 55, 1);
+        }
+
+        nav > div:nth-of-type(1) > div a {
+            background-color: rgba(17, 33, 55, 1);
+            width: 50px;
+            height: 50px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            color: #f5c34b;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav > div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav > div:nth-of-type(1) ul li {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            color: rgba(17, 33, 55, 1);
+            transition: all 0.5s;
+        }
+
+        nav > div:nth-of-type(1) ul li:hover div:nth-of-type(2) {
+            background-color: rgba(17, 33, 55, 1);
+            color:#f5c34b;
+        }
+
+        nav > div:nth-of-type(1) ul li a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: rgba(17, 33, 55, 1);
+        }
+
+        nav > div:nth-of-type(1) ul li div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        nav > div:nth-of-type(1) ul li div:nth-of-type(1) span:nth-of-type(1) {
+            font-size: 13px;
+        }
+
+        nav > div:nth-of-type(1) ul li div:nth-of-type(1) span:nth-of-type(2) {
+            font-size: 16px;
+        }
+
+        nav > div:nth-of-type(1) ul li div:nth-of-type(2) {
+            width: 48px;
+            height: 48px;
+            border: solid 1px rgba(17, 33, 55, 1);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        nav > div:nth-of-type(1) ul li a div:nth-of-type(2) div {
+            background-color: #f5c34b !important; 
+            color: rgba(17, 33, 55, 1) !important;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid rgba(17, 33, 55, 1);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            position: absolute;
+            left: 38px;
+            top: -6px;
+        }
+
+        nav > div:nth-of-type(2) {
+            width: calc(100% - 88px);
+            padding: 13px 44px 13px 44px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav > div:nth-of-type(2) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family: IranYekan-black;
+            font-weight: 100;
+            font-size: 16px;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(1) {
+            gap: 40px;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(1) li {
+            padding: 0 18px 0 18px;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(1) li a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(1) li a i {
+            font-weight: 600;
+            font-size: 10px;
+        }
+
+        nav  > div:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) {
+            padding: 0;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) a {
+            align-items: center;
+            gap: 4px;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) i {
+            font-size: 22px;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(2) {
+            padding: 0 0 0 4px;
+        }
+
+        nav > div:nth-of-type(2) ul:nth-of-type(2) {
+            gap: 30px;
+        }
+
+        main {
+            width: calc(100% - 80px);
+            padding: 40px;
+            background-color: lightgray /* #f3f5f6 */;
+        }
+
+        main #hero {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        main #hero > div:nth-of-type(1) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) {
+            background-color: white;
+            width: calc(75% - 10px);
+            height: 590px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) .image {
+            background-color: gray;
+            width: 350px;
+            height: 350px;;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) .description a h3 {
+            margin: 0;
+            padding: 0;
+            font-family: IranYekan-black;
+            font-size: 50px;
+            transition: 0.3s all ease;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) .description h3:hover {
+            color: #f5c34b;            
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) .description span {
+            font-family: IranYekan-black;
+            font-size: 16px;
+            color:rgb(18, 39, 70)
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(1) .description a:nth-of-type(2) {
+            background-color: #f5c34b;
+            width: 170px;
+            height: 50px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: IranYekan-bold;
+            font-size: 14px;
+            margin-top: 25px;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) {
+            width: calc(25% - 24px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) div {
+            background-color: white;
+            width: 100%;
+            height: 280px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) div .image {
+            background-color: gray;
+            width: 150px;
+            height: 150px;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) div .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) .description a h3 {
+            margin: 0;
+            padding: 0;
+            font-family: IranYekan-black;
+            font-size: 24px;
+            transition: 0.3s all ease;
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) .description h3:hover {
+            color: #f5c34b;            
+        }
+
+        main #hero > div:nth-of-type(1) > div:nth-of-type(2) .description span {
+            font-family: IranYekan-black;
+            font-size: 16px;
+            color: #443297;
+        }
+
+        main #hero > div:nth-of-type(2) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main #hero > div:nth-of-type(2) div {
+            background-color: white;
+            width: 25%;
+            height: 280px;
+            border-radius: 6px;
+        }
+
+        main #categories1 {
+            background-color: white;
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main #categories1 > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 20px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+        }
+
+        main #categories1 > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-weight: 100;
+            font-size: 27px;
+        }
+
+        main #categories1 > div:nth-of-type(2) {
+            width: calc(100% - 144px);
+            padding: 72px 72px 64px 72px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #categories1 > div:nth-of-type(2) .categories1-post a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+
+        main #categories1 > div:nth-of-type(2) .categories1-post a .image {
+            /* background-color: gray; */
+            width: 84px;
+            height: 84px;
+        }
+
+        main #categories1 > div:nth-of-type(2) .categories1-post a > div:nth-of-type(1) img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        main #categories1 > div:nth-of-type(2) .categories1-post a div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        main #categories1 > div:nth-of-type(2) .categories1-post a div h4 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-weight: 200;
+            font-size: 15px;
+        }
+
+        main #categories1 > div:nth-of-type(2) .categories1-post a div span {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+        }
+
+        main #best-sellers {
+            background-color: white;
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        main #best-sellers > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 16px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #best-sellers > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-weight: 100;
+            font-size: 27px;
+        }
+
+        main #best-sellers > div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 12px;
+            font-family: IranYekan-Bold;
+            font-weight: 500;
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+            color: #626974;
+        }
+
+        main #best-sellers > div:nth-of-type(1) ul li a {
+            color: #626974;
+        }
+
+        /* main #best-sellers .owl-carousel {
+            width: calc(100% - 60px);
+            padding: 8px 30px 64px 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: red;
+        } */
+ 
+        /* main #best-sellers > div:nth-of-type(2) > div {
+            width: calc(20% - 60px);
+            height: 380px;
+            padding: 24px 30px 0 30px;
+            border: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+             gap: 16px; 
+        } */
+
+        main #best-sellers > div:nth-of-type(2) > div > a {
+            /* background-color: gray; */
+            width: 100%;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main #best-sellers > div:nth-of-type(2) > div > a img {
+            width: 100%;
+            height: 14.5vw;
+            object-fit: contain;
+        }
+
+        main #best-sellers > div:nth-of-type(2) > div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        main #best-sellers > div:nth-of-type(2) > div > div a {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+            color: #626974;
+        }
+
+        main #best-sellers > div:nth-of-type(2) > div > div h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 16px;
+            font-weight: 100;
+            color: black;
+        } 
+
+        main #digital {
+            width: 100%;
+            background-color: white;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        main #digital > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 16px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #digital > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 27px;
+            font-weight: 100;
+        }
+
+        main #digital > div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+            font-family: IranYekan-Bold;
+            font-size: 16px;
+            font-weight: 500;
+            color: #626974;
+        }
+
+        main #digital > div:nth-of-type(1) ul li a {
+            color: #626974;
+        }
+
+        main #digital > div:nth-of-type(2) {
+            width: calc(100% - 60px);
+            padding: 8px 0 110px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        main #digital > div:nth-of-type(2) > div:nth-of-type(1) {
+            background-color: gray;
+            width: 16.5%;
+            height: 350px;
+            border-radius: 6px;
+            background-image: url(Assests/Image/pink-headphones-mint-green-background-dj-headphones-top-view-audio-music-listening-1-1.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #digital > div:nth-of-type(2) > div {
+            width: calc(16.5% - 24px);
+            height: 350px;
+            padding: 20px 12px 0 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main #digital > div:nth-of-type(2) > div > a {
+            background-color: gray;
+            width: 100%;
+            height: 200px;
+        }
+
+        main #digital > div:nth-of-type(2) > div:nth-of-type(2) > a {
+            background-image: url(Assests/Image/16cf3b750268b4512aa95d57e532945ab593eb4e_1673343779.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #digital > div:nth-of-type(2) > div:nth-of-type(3) > a {
+            background-image: url(Assests/Image/4708d87e666663e92f7041eb9c821e43239ce643_1668858933.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #digital > div:nth-of-type(2) > div:nth-of-type(4) > a {
+            background-image: url(Assests/Image/45395485f1aaf96a560b273f1782dc91159e9ed9_1689579846.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #digital > div:nth-of-type(2) > div:nth-of-type(5) > a {
+            background-image: url(Assests/Image/be65552a8c3e709a7d49d2f1eb35b3882b1fdf18_1662792408.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #digital > div:nth-of-type(2) > div:nth-of-type(6) > a {
+            background-image: url(Assests/Image/b0af2ec78668c85506c1edc260b42ff447f019c8_1667201885.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #digital > div:nth-of-type(2) > div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        main #digital > div:nth-of-type(2) > div > div a {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+            color: #626974;
+        }
+
+        main #digital > div:nth-of-type(2) > div > div h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 16px;
+            font-weight: 100;
+            color: black;
+        }
+
+        main #furniture {
+            width: 100%;
+            background-color: white;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        main #furniture > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 16px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #furniture > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 27px;
+            font-weight: 100;
+        }
+
+        main #furniture > div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+            font-family: IranYekan-Bold;
+            font-size: 16px;
+            font-weight: 500;
+            color: #626974;
+        }
+
+        main #furniture > div:nth-of-type(1) ul li a {
+            color: #626974;
+        }
+
+        main #furniture > div:nth-of-type(2) {
+            width: calc(100% - 60px);
+            padding: 8px 0 110px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        main #furniture > div:nth-of-type(2) > div:nth-of-type(1) {
+            background-color: gray;
+            width: 16.5%;
+            height: 350px;
+            border-radius: 6px;
+            background-image: url(Assests/Image/modern-living-room-home-with-copy-space-wall-background-interior-architecture-concept-3d-illustration-rendering-1.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #furniture > div:nth-of-type(2) > div {
+            width: calc(16.5% - 24px);
+            height: 350px;
+            padding: 20px 12px 0 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main #furniture > div:nth-of-type(2) > div > a {
+            background-color: gray;
+            width: 100%;
+            height: 200px;
+        }
+
+        main #furniture > div:nth-of-type(2) > div:nth-of-type(2) > a {
+            background-image: url(Assests/Image/16cf3b750268b4512aa95d57e532945ab593eb4e_1673343779.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #furniture > div:nth-of-type(2) > div:nth-of-type(3) > a {
+            background-image: url(Assests/Image/4708d87e666663e92f7041eb9c821e43239ce643_1668858933.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #furniture > div:nth-of-type(2) > div:nth-of-type(4) > a {
+            background-image: url(Assests/Image/45395485f1aaf96a560b273f1782dc91159e9ed9_1689579846.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #furniture > div:nth-of-type(2) > div:nth-of-type(5) > a {
+            background-image: url(Assests/Image/be65552a8c3e709a7d49d2f1eb35b3882b1fdf18_1662792408.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #furniture > div:nth-of-type(2) > div:nth-of-type(6) > a {
+            background-image: url(Assests/Image/b0af2ec78668c85506c1edc260b42ff447f019c8_1667201885.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #furniture > div:nth-of-type(2) > div > a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main #furniture > div:nth-of-type(2) > div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        main #furniture > div:nth-of-type(2) > div > div a {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+            color: #626974;
+        }
+
+        main #furniture > div:nth-of-type(2) > div > div h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 16px;
+            font-weight: 100;
+            color: black;
+        }
+
+        main #beauty {
+            width: 100%;
+            background-color: white;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        main #beauty > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 16px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #beauty > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 27px;
+            font-weight: 100;
+        }
+
+        main #beauty > div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+            font-family: IranYekan-Bold;
+            font-size: 16px;
+            font-weight: 500;
+            color: #626974;
+        }
+
+        main #beauty > div:nth-of-type(1) ul li a {
+            color: #626974;
+        }
+
+        main #beauty > div:nth-of-type(2) {
+            width: calc(100% - 60px);
+            padding: 8px 0 110px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        main #beauty > div:nth-of-type(2) > div:nth-of-type(1) {
+            background-color: gray;
+            width: 16.5%;
+            height: 350px;
+            border-radius: 6px;
+            background-image: url(Assests/Image/woman-body-lotion-rejuvenation-cosmetics-isolated-background-1-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #beauty > div:nth-of-type(2) > div {
+            width: calc(16.5% - 24px);
+            height: 350px;
+            padding: 20px 12px 0 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main #beauty > div:nth-of-type(2) > div > a {
+            background-color: gray;
+            width: 100%;
+            height: 200px;
+        }
+
+        main #beauty > div:nth-of-type(2) > div:nth-of-type(2) > a {
+            background-image: url(Assests/Image/16cf3b750268b4512aa95d57e532945ab593eb4e_1673343779.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #beauty > div:nth-of-type(2) > div:nth-of-type(3) > a {
+            background-image: url(Assests/Image/4708d87e666663e92f7041eb9c821e43239ce643_1668858933.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #beauty > div:nth-of-type(2) > div:nth-of-type(4) > a {
+            background-image: url(Assests/Image/45395485f1aaf96a560b273f1782dc91159e9ed9_1689579846.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #beauty > div:nth-of-type(2) > div:nth-of-type(5) > a {
+            background-image: url(Assests/Image/be65552a8c3e709a7d49d2f1eb35b3882b1fdf18_1662792408.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #beauty > div:nth-of-type(2) > div:nth-of-type(6) > a {
+            background-image: url(Assests/Image/b0af2ec78668c85506c1edc260b42ff447f019c8_1667201885.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #beauty > div:nth-of-type(2) > div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        main #beauty > div:nth-of-type(2) > div > div a {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+            color: #626974;
+        }
+
+        main #beauty > div:nth-of-type(2) > div > div h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 16px;
+            font-weight: 100;
+            color: black;
+        }
+
+        main #clothing {
+            width: 100%;
+            background-color: white;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        main #clothing > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 16px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #clothing > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 27px;
+            font-weight: 100;
+        }
+
+        main #clothing > div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+            font-family: IranYekan-Bold;
+            font-size: 16px;
+            font-weight: 500;
+            color: #626974;
+        }
+
+        main #clothing > div:nth-of-type(1) ul li a {
+            color: #626974;
+        }
+
+        main #clothing > div:nth-of-type(2) {
+            width: calc(100% - 60px);
+            padding: 8px 0 110px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        main #clothing > div:nth-of-type(2) > div:nth-of-type(1) {
+            background-color: gray;
+            width: 16.5%;
+            height: 350px;
+            border-radius: 6px;
+            background-image: url(Assests/Image/Group-28.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #clothing > div:nth-of-type(2) > div {
+            width: calc(16.5% - 24px);
+            height: 350px;
+            padding: 20px 12px 0 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+        }
+
+        main #clothing > div:nth-of-type(2) > div > a {
+            background-color: gray;
+            width: 100%;
+            height: 200px;
+        }
+
+        main #clothing > div:nth-of-type(2) > div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        main #clothing > div:nth-of-type(2) > div > div a {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+            color: #626974;
+        }
+
+        main #clothing > div:nth-of-type(2) > div > div h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 16px;
+            font-weight: 100;
+            color: black;
+        }
+
+        main #clothing > div:nth-of-type(2) > div:nth-of-type(2) > a {
+            background-image: url(Assests/Image/16cf3b750268b4512aa95d57e532945ab593eb4e_1673343779.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #clothing > div:nth-of-type(2) > div:nth-of-type(3) > a {
+            background-image: url(Assests/Image/4708d87e666663e92f7041eb9c821e43239ce643_1668858933.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #clothing > div:nth-of-type(2) > div:nth-of-type(4) > a {
+            background-image: url(Assests/Image/45395485f1aaf96a560b273f1782dc91159e9ed9_1689579846.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #clothing > div:nth-of-type(2) > div:nth-of-type(5) > a {
+            background-image: url(Assests/Image/be65552a8c3e709a7d49d2f1eb35b3882b1fdf18_1662792408.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #clothing > div:nth-of-type(2) > div:nth-of-type(6) > a {
+            background-image: url(Assests/Image/b0af2ec78668c85506c1edc260b42ff447f019c8_1667201885.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #categories2 {
+            background-color: white;
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main #categories2 > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 20px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+        }
+
+        main #categories2 > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-weight: 100;
+            font-size: 27px;
+        }
+
+        main #categories2 > div:nth-of-type(2) {
+            width: calc(100% - 10%);
+            padding: 72px 0 64px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #categories2 > div:nth-of-type(2) .categories2-post a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+
+        main #categories2 > div:nth-of-type(2) .categories2-post a img {
+            background-color: gray;
+            width: 100%;
+            height: 64px;
+            object-fit: cover;
+        }
+
+        main #categories2 > div:nth-of-type(2) .categories2-post a div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        main #categories2 > div:nth-of-type(2) .categories2-post a div h4 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-weight: 200;
+            font-size: 15px;
+        }
+
+        main #categories2 > div:nth-of-type(2) .categories2-post a div span {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+        }
+
+
+        main #last-products {
+            background-color: white;
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        main #last-products > div:nth-of-type(1) {
+            width: calc(100% - 60px);
+            padding: 16px 0 16px 0;
+            border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #last-products > div:nth-of-type(1) h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-weight: 100;
+            font-size: 27px;
+        }
+
+        main #last-products > div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 12px;
+            font-family: IranYekan-Bold;
+            font-weight: 500;
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+            color: #626974;
+        }
+
+        main #last-products > div:nth-of-type(1) ul li a {
+            color: #626974;
+        }
+
+        main #last-products > div:nth-of-type(2) {
+            width: calc(100% - 60px);
+            padding: 8px 0 64px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        main #last-products > div:nth-of-type(2) > div {
+            width: calc(20% - 60px);
+            height: 380px;
+            padding: 24px 30px 0px 30px;
+            border: 1px solid rgba(4, 30, 66, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+        }
+
+        main #last-products > div:nth-of-type(2) > div > a {
+            background-color: gray;
+            width: 100%;
+            height: 220px;
+        }
+
+        /* main #last-products > div:nth-of-type(2) > div:nth-of-type(1) > a {
+            background-image: url(Assests/Image/70c0caa015be4b6830053157a29992bd4d49bf08_1651487052.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #last-products > div:nth-of-type(2) > div:nth-of-type(2) > a {
+            background-image: url(Assests/Image/da537c278dfead32df0747dd595a44926789011d_1688981652.webp);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #last-products > div:nth-of-type(2) > div:nth-of-type(3) > a {
+            background-image: url(Assests/Image/c5d9390458fdb867fae8bfdc9a0673780ac432cc_1673036583.webp);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #last-products > div:nth-of-type(2) > div:nth-of-type(4) > a {
+            background-image: url(Assests/Image/db4cd4e0e6e455233c17d52eafca180febfbfba0_1690800923.webp);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        main #last-products > div:nth-of-type(2) > div:nth-of-type(5) > a {
+            background-image: url(Assests/Image/164d9a3748b38190ad41451b56f391d050ac34c2_1599981601.webp);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        } */
+
+        main #last-products > div:nth-of-type(2) > div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        main #last-products > div:nth-of-type(2) > div > div a {
+            font-family: IranYekan-Bold;
+            font-size: 13px;
+            color: #626974;
+        }
+
+        main #last-products > div:nth-of-type(2) > div > div h3 {
+            margin: 0;
+            font-family: IranYekan-Black;
+            font-size: 16px;
+            font-weight: 100;
+            color: black;
+        }
+
+        main #specification {
+            width: calc(100% - 160px);
+            padding: 30px 7% 60px 7%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main #specification > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        main #specification > div div:nth-of-type(1) {
+            font-size: 28px;
+        }
+
+        main #specification > div div:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        }
+
+        main #specification > div div:nth-of-type(2) span:first-of-type {
+            font-family: IranYekan-Bold;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+        }
+
+        main #specification> div div:nth-of-type(2) span:last-of-type {
+            font-family: IranYekan-Bold;
+            font-size: 15px;
+            font-weight: 500;
+            color: #626974;
+        }
+
+        footer {
+            width: calc(100% - 40px);
+            background-color: white;
+            padding: 40px 20px 25px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: blue;
+        }
+
+        footer > div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            background-color: red;
+        }
+
+        footer > div:nth-of-type(1) h1 {
+            font-family: IranYekan-Black;
+            font-size: 28px;
+            font-weight: 100;
+        }
+
+        footer > div:nth-of-type(1) > div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        footer > div:nth-of-type(1) > div div {
+            width: 354px;
+            height: 60px;
+            border: 1px solid rgba(4, 30, 66, 0.12);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-right: 16px;
+
+        }
+
+        footer > div:nth-of-type(1) > div div input[type="email"] {
+            border: none;
+            outline: none;
+            font-family: IranYekan-Bold;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        footer > div:nth-of-type(1) > div a {
+            background-color: gray;
+            width: 120px;
+            height: 60px;
+            border-radius: 6px;
+            text-align: center;
+            line-height: 60px;
+            font-family: IranYekan-Bold;
+            font-size: 15px;
+        }
+
+
+        footer > div:nth-of-type(2) {
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: magenta;
+        }
+
+        footer > div:nth-of-type(2) h5 {
+            font-family: Morabba-Bold;
+            font-weight: 100;
+            font-size: 18px;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(1) {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: orange;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 0 20px 10px 16px;
+            background-color: red;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(1) > div div:nth-of-type(1) {
+            width: 3vw;
+            height: 3vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 3vw;
+            background-color: green;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(1) > div div:nth-of-type(2) h6 {
+            margin: 0 0 8px 0;
+            padding: 0;
+            font-family: IranYekan-Black;
+            font-weight: 100;
+            font-size: 15px;
+            background-color: magenta;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(1) > div div:nth-of-type(2) span {
+            font-family: IranYekan;
+            font-size: 15px;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 10px 20px 0 16px;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(2) {
+            width: 43%;
+            margin-left: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-self: flex-start;
+            background-color: yellow;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(2) > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(2) > div a {
+            font-family: IranYekan-bold;
+            font-weight: 100;
+            font-size: 16px;
+            margin: 6px 0 6px 0;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(3) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: aqua;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(3) div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: cneter;
+            align-items: flex-start;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(3) div:nth-of-type(1) ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(3) div:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(3) div:nth-of-type(2) h5 {
+            margin: 16px 0 16px 0;
+        }
+
+        footer > div:nth-of-type(2) > div:nth-of-type(3) div:nth-of-type(2) div {
+            background-color: #f5c34b;
+            width: 10px;
+            height: 25px;
+            margin-right: 2vw;
+        }
+
+        @media screen and (max-width : 1459px) {
+            nav > div:nth-of-type(1) > div {
+                width: 33.5%;
+            }
+        }
+
+        @media screen and (max-width : 1365px) {
+            nav > div:nth-of-type(1) {
+                width: calc(100% - 108px);
+                padding-right: 64px;
+            }
+
+            nav > div:nth-of-type(1) > div {
+                width: 30%;
+            }
+
+            main #categories1 > div:nth-of-type(2) {
+                padding-top: 52px;
+                padding-bottom: 60px;
+            }
+
+            main #categories1 > div:nth-of-type(2) .categories1-post a {
+                gap: 36px;
+            }
+        }
+
+        @media screen and (max-width : 1212px) {
+
+            nav > div:nth-of-type(1) {
+                width: calc(100% - 108px);
+                padding-right: 64px;
+            }
+
+            nav > div:nth-of-type(1) > div {
+                width: 71.2%;
+            }
+
+            nav > div:nth-of-type(1) ul {
+                display: none;
+            }
+
+            nav > div:nth-of-type(2) {
+                width: calc(100% - 108px);
+                padding-right: 64px;
+            }
+
+            nav > div:nth-of-type(2) ul:nth-of-type(1) {
+                width: calc(100% - 30px);
+                padding-left: 30px;
+                justify-content: center;
+                gap: 50px;
+            }
+
+            nav > div:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) {
+                width: 45%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            nav > div:nth-of-type(2) ul:nth-of-type(2) {
+                display: none;
+            }
+
+            main {
+                width: calc(100% - 40px);
+                padding: 30px 20px 0 20px;
+            }
+
+            main #hero > div:nth-of-type(1) {
+                flex-wrap: wrap;
+            }
+
+            main #hero > div:nth-of-type(1) > div:nth-of-type(1) {
+                width: 100%;
+            }
+
+            main #hero > div:nth-of-type(1) > div:nth-of-type(2) {
+                width: 100%;
+                flex-direction: row;
+            }
+
+            main #hero > div:nth-of-type(2) {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            
+            main #hero > div:nth-of-type(2) > div {
+                width: calc(50% - 15px);
+            }
+
+            main #categories1 > div:nth-of-type(2) {
+                width: calc(100% - 122px);
+                padding: 64px 80px 64px 42px; 
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 96px;
+            }
+
+            main #categories1 > div:nth-of-type(2) .categories1-post a {
+                gap: 24px;
+            }
+
+            main #categories1 > div:nth-of-type(2) .categories1-post a .image {
+                /* background-color: gray; */
+                width: 52px;
+                height: 52px;
+            }
+
+            main #categories1 > div:nth-of-type(2) > div:nth-of-type(2) a > div:nth-of-type(1) img {
+                width: 140%;
+                height: 140%;
+                object-fit: contain;
+            }
+
+            main #categories1 > div:nth-of-type(2) > div:nth-of-type(4) a > div:nth-of-type(1) img {
+                width: 160%;
+                height: 160%;
+                object-fit: contain;
+            }
+
+            main #categories1 > div:nth-of-type(2) > div:nth-of-type(5) a > div:nth-of-type(1) img {
+                width: 120%;
+                height: 120%;
+                object-fit: contain;
+            }
+
+            main #categories1 > div:nth-of-type(2) > div:nth-of-type(7) a > div:nth-of-type(1) img {
+                width: 140%;
+                height: 140%;
+                object-fit: contain;
+            }
+
+        }
+
+        @media screen and (max-width : 1000px) {
+            nav {
+                width: calc(100% - 60px);
+                padding: 0 30px 0 30px;
+            }
+
+            nav > div:nth-of-type(1) {
+                width: 100%;
+                padding: 16px 0 16px 0;
+                flex-wrap: wrap;  
+            }
+
+            nav > div:nth-of-type(1) > a {
+                margin-right: 12px;
+            }
+
+            nav > div:nth-of-type(1) > a i {
+                display: inline;
+                font-size: 24px;
+                margin-left: 10px;
+                font-weight: 900;
+                position: relative;
+                top: 4px;
+            }
+
+            nav > div:nth-of-type(1) > div {
+                width: 100%;
+                order: 3;
+                flex-direction: row-reverse;
+                margin-top: 20px;
+                margin-right: 0 ;
+                border-radius: 10px;
+            }
+
+            nav > div:nth-of-type(1) > div div {
+                width:calc(100% - 40px);
+                border-radius: 6px 0 0 6px ;
+            }
+
+            nav > div:nth-of-type(1) > div div input[type=search] {
+                width: 100%;
+                border-radius: 0;
+                text-align: left;
+            }
+
+            nav > div:nth-of-type(1) > div div select {
+                display: none;
+            }
+
+            nav > div:nth-of-type(1) > div a {
+                border-radius: 0 6px 6px 0;
+            }
+
+            nav > div:nth-of-type(1) > ul {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 10px;
+            }
+
+            nav > div:nth-of-type(1) > ul li span {
+                display: none;
+            }
+
+            nav > div:nth-of-type(1) > ul li:nth-of-type(1) {
+                display: none;
+            }
+
+            nav > div:nth-of-type(1) > ul li:nth-of-type(2) {
+                display: none;
+            }
+
+            nav > div:nth-of-type(1) > ul li a div:nth-of-type(2) {
+                border-radius: 6px;
+            }
+
+            nav > div:nth-of-type(1) > ul li:nth-of-type(4) a > div:nth-of-type(2) div {
+                top: -4px;
+                left: 38px;
+            }
+
+            nav > div:nth-of-type(2) {
+                display: none;
+            }
+            
+            main #specification {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width : 766px) {
+            main {
+                padding-top: 40px;
+            }
+           
+            main #hero > div:nth-of-type(1) > div:nth-of-type(1) {
+                height: 500px;
+            }
+           
+            main #hero > div:nth-of-type(1) > div:nth-of-type(2) {
+                flex-direction: column;
+            }
+
+            main #hero > div:nth-of-type(1) > div:nth-of-type(2) div {
+                width: 100%;
+            }
+
+            main #hero > div:nth-of-type(2) {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+
+            main #hero > div:nth-of-type(2) div {
+                width: 100%;
+            }
+
+            main #categories1 > div:nth-of-type(2) {
+                width: calc(100% - 128px);
+                padding: 64px 64px 64px 64px;
+                justify-content: center;
+                align-items: center;
+                gap: 80px;
+            }
+
+            main #best-sellers > div:nth-of-type(1) {
+                border: none;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            main #best-sellers > div:nth-of-type(1) h3 {
+                border-bottom: 1px solid rgba(4, 30, 66, 0.1);
+            }
+        }
+
+        @media screen and (max-width : 576px) {
+            main #hero > div:nth-of-type(1) > div:nth-of-type(1) {
+                height: 440px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav > div:nth-of-type(1) > ul li:nth-of-type(4) {
+                display: none;
+            }
+
+            main #hero > div:nth-of-type(1) > div:nth-of-type(1) {
+                height: 390px;
+            }
+
+            main #categories1 > div:nth-of-type(2) {
+                width: 100%;
+                padding: 64px 0;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 50px;
+            }
+
+            main #categories1 > div:nth-of-type(2) .categories1-post a {
+                gap: 40px;
+            }
+
+            main #best-sellers > div:nth-of-type(1) {
+                flex-direction: column;
+                border-bottom: none;
+                align-items: flex-start;
+            }
+
+            main #best-sellers > div:nth-of-type(1) ul {
+                font-size: 12px;
+                gap: 24px;
+                border-top: 1px solid rgba(4, 30, 66, 0.1);
+                margin-top: 20px;
+                padding-top: 40px ;
+            }
+
+            main #best-sellers > div:nth-of-type(2) > div {
+                display: none;
+            }
+
+            main #best-sellers > div:nth-of-type(2) > div:nth-of-type(1) {
+                display: flex;
+                width: 100%;
+            }
+
+            main #digital > div:nth-of-type(1) {
+                flex-direction: column;
+                border-bottom: none;
+                align-items: flex-start;
+            }
+
+            main #digital > div:nth-of-type(1) ul {
+                font-size: 12px;
+                gap: 24px;
+                border-top: 1px solid rgba(4, 30, 66, 0.1);
+                margin-top: 20px;
+                padding-top: 40px;
+            }
+
+            main #digital > div:nth-of-type(2) {
+                flex-direction: column;
+                width: calc(100% - 90px);
+                padding: 8px 45px 60px 45px ;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            main #digital > div:nth-of-type(2) > div:nth-of-type(1) {
+                width: 100%;
+                height: 450px;
+            }
+
+            main #digital > div:nth-of-type(2) > div {
+                width: 80%;
+                margin-bottom: 40px;
+            } 
+
+            main #digital > div:nth-of-type(2) > div:nth-of-type(6) > a {
+                height: 250px;
+            }
+
+            main #digital > div:nth-of-type(2) > div > a {
+                width: 90%;
+            }
+
+            main #furniture > div:nth-of-type(1) {
+                flex-direction: column;
+                border-bottom: none;
+                align-items: flex-start;
+            }
+
+            main #furniture > div:nth-of-type(1) ul {
+                font-size: 12px;
+                gap: 24px;
+                border-top: 1px solid rgba(4, 30, 66, 0.1);
+                margin-top: 20px;
+                padding-top: 40px;
+            }
+
+            main #furniture > div:nth-of-type(2) {
+                flex-direction: column;
+                width: calc(100% - 90px);
+                padding: 8px 45px 60px 45px ;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            main #furniture > div:nth-of-type(2) > div:nth-of-type(1) {
+                width: 100%;
+                height: 450px;
+            }
+
+            main #furniture > div:nth-of-type(2) > div {
+                width: 80%;
+                margin-bottom: 40px;
+            } 
+
+            main #furniture > div:nth-of-type(2) > div:nth-of-type(6) > a {
+                height: 250px;
+            }
+
+            main #furniture > div:nth-of-type(2) > div > a {
+                width: 90%;
+            }
+
+            main #beauty > div:nth-of-type(1) {
+                flex-direction: column;
+                border-bottom: none;
+                align-items: flex-start;
+            }
+
+            main #beauty > div:nth-of-type(1) ul {
+                font-size: 12px;
+                gap: 24px;
+                border-top: 1px solid rgba(4, 30, 66, 0.1);
+                margin-top: 20px;
+                padding-top: 40px;
+            }
+
+            main #beauty > div:nth-of-type(2) {
+                flex-direction: column;
+                width: calc(100% - 90px);
+                padding: 8px 45px 60px 45px ;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            main #beauty > div:nth-of-type(2) > div:nth-of-type(1) {
+                width: 100%;
+                height: 450px;
+            }
+
+            main #beauty > div:nth-of-type(2) > div {
+                width: 80%;
+                margin-bottom: 40px;
+            } 
+
+            main #beauty > div:nth-of-type(2) > div:nth-of-type(6) > a {
+                height: 250px;
+            }
+
+            main #beauty > div:nth-of-type(2) > div > a {
+                width: 90%;
+            }
+
+            main #clothing > div:nth-of-type(1) {
+                flex-direction: column;
+                border-bottom: none;
+                align-items: flex-start;
+            }
+
+            main #clothing > div:nth-of-type(1) ul {
+                font-size: 12px;
+                gap: 24px;
+                border-top: 1px solid rgba(4, 30, 66, 0.1);
+                margin-top: 20px;
+                padding-top: 40px;
+            }
+
+            main #clothing > div:nth-of-type(2) {
+                flex-direction: column;
+                width: calc(100% - 90px);
+                padding: 8px 45px 60px 45px ;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            main #clothing > div:nth-of-type(2) > div:nth-of-type(1) {
+                width: 100%;
+                height: 450px;
+            }
+
+            main #clothing > div:nth-of-type(2) > div {
+                width: 80%;
+                margin-bottom: 40px;
+            } 
+
+            main #clothing > div:nth-of-type(2) > div:nth-of-type(6) > a {
+                height: 250px;
+            }
+
+            main #clothing > div:nth-of-type(2) > div > a {
+                width: 90%;
+            }
+        }   
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="#"><i class="fa-sharp fa-solid fa-bars"></i>زئومارت فارسی</a>
+
+            <div>
+                <div>
+                    <input type="search" placeholder="جستجوی محصولات...">
+
+                    <select name="دسته بندی">
+                        <option value="0" selected disabled>دسته بندی</option>
+                        <option value="1">تجهیزات خودرو</option>
+                        <option value="2">ساعت هوشمند</option>
+                        <option value="3">کالای دیجیتال</option>
+                        <option value="4">موبایل</option>
+                        <option value="5">هدفون</option>
+                        <option value="6">کالای سوپرمارکتی</option>
+                        <option value="7">صبحانه</option>
+                        <option value="8">میوه</option>
+                        <option value="9">لوازم منزل</option>
+                    </select>
+                </div>
+
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+
+            <ul>
+                <li>
+                    <div>
+                        <span>تماس</span>
+                        <span>09173115626</span>
+                    </div>
+
+                    <div><i class="fa-solid fa-phone"></i></div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div>
+                            <span>علاقه مندی ها</span>
+                            <span>آیتم های من</span>
+                        </div>
+
+                        <div><i class="fa-light fa-heart"></i></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div>
+                            <span>ورود</span>
+                            <span>اکانت</span>
+                        </div>
+
+                        <div><i class="fa-regular fa-user"></i></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div>
+                            <span>0تومان</span>
+                            <span>مجموع</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-cart-shopping "></i>
+                            <div>0</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><a href="#"><i class="fa-sharp fa-light fa-bars-staggered fa-flip-horizontal"></i>دسته بندی ها</a></li>
+                <li><a href="#">خانه<i class="fa-regular fa-chevron-down"></i></a></li>
+                <li><a href="#">فروشگاه<i class="fa-regular fa-chevron-down"></i></a></li>
+                <li><a href="#">صفحات<i class="fa-regular fa-chevron-down"></i></a></li>
+                <li><a href="#">وبلاگ<i class="fa-regular fa-chevron-down"></i></a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">تخفیفات</a></li>
+                <li><a href="#">داغ ترین ها</a></li>
+                <li><a href="#">محصولات پرفروش</a></li>
+                <li><a href="#">جدیدترین ها</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="hero">
+            <div> 
+                <div>
+                    <div class=image>
+                        <img src="Assests/Image/image-302.jpg">
+                    </div>
+
+                    <div class="description">
+                        <a href="#"><h3>هدفون اونیکو مدل <br> k10 Pro</h3></a>
+                        <span>از 500,000تومان-600,000تومان</span>
+                        <a href="#">انتخاب گزینه ها</a>
+                    </div>
+                </div>
+
+                <div> 
+                    <div>
+                        <div class=image>
+                            <!-- <img src="Assests/Image/image-302.jpg"> -->
+                        </div>
+    
+                        <div class="description">
+                            <span>شروع از 50,000تومان</span>
+                            <a href="#"><h3>ساعت مچی عقربه ای سون فرایدی</h3></a>
+                            <a href="#">افزودن به سبد خرید</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class=image>
+                            <img src="Assests/Image/headset-product3-600x600-1.png">;
+                        </div>
+    
+                        <div class="description">
+                            <span>شروع از 320,000تومان</span>
+                            <a href="#"><h3>هدفون بی سیم سامسونگ</h3></a>
+                            <a href="#">افزودن به سبد خرید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div> 
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div id="categories1">
+            <div>
+                <h3>خرید بر اساس دسته بندی</h3>
+            </div>
+
+            <div>
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/61jLiCovxVL_1-removebg-preview.png"></div>
+                        
+                        <div>
+                            <h4>اپل</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/Samsung.png"></div>
+
+                        <div>
+                            <h4>سامسونگ</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/image_45-removebg-preview.png"></div>
+
+                        <div>
+                            <h4>سونی</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/Nike-removebg-preview.png"></div>
+
+                        <div>
+                            <h4>نایک</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/Adidas-removebg-preview.png"></div>
+
+                        <div>
+                            <h4>آدیداس</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/Xiaomi-removebg-preview.png"></div>
+
+                        <div>
+                            <h4>شیائومی</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/Ray-Ban-removebg-preview.png"></div>
+
+                        <div>
+                            <h4>ری بن</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/Michael_Kors-removebg-preview.png"></div>
+
+                        <div>
+                            <h4>رولکس</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/image-69.png"></div>
+
+                        <div>
+                            <h4>تیمبرلند</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories1-post">
+                    <a href="#">
+                        <div class="image"><img src="Assests/Image/image-70.png"></div>
+
+                        <div>
+                            <h4>فور اور</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="best-sellers">
+            <div>
+                <h3>پرفروش های این ماه</h3>
+
+                <ul>
+                    <li><a href="#">برترین ها</a></li>
+                    <li><a href="#">لوازم منزل</a></li>
+                    <li><a href="#">ساعت</a></li>
+                    <li><a href="#">موبایل</a></li>
+                    <li><a href="#">همه</a></li>
+                </ul>
+            </div>
+
+            <div calss="owl-carousel owl-theme">
+                <div> 
+                    <a href="#"><img src="Assests/Image/70c0caa015be4b6830053157a29992bd4d49bf08_1651487052.jpg"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>حاروبرقی بوش BGL8PRO5</h3>
+                        </a>
+                        <h3>6,500,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"><img src="Assests/Image/da537c278dfead32df0747dd595a44926789011d_1688981652.webp"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>مبل راحتی 8 نفره مدل نیوپیتر</h3>
+                        </a>
+                        <h3>47,000,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"><img src="Assests/Image/c5d9390458fdb867fae8bfdc9a0673780ac432cc_1673036583.webp"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>مبل راحتی شش نفره مدل اریک</h3>
+                        </a>
+                        <h3>27,000,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"><img src="Assests/Image/db4cd4e0e6e455233c17d52eafca180febfbfba0_1690800923.webp"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>مبل راحتی 6 نفره لوکا مبل مدل میلان</h3>
+                        </a>
+                        <h3>5,300,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"><img src="Assests/Image/164d9a3748b38190ad41451b56f391d050ac34c2_1599981601.webp"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>صندلی تیس مدل S37</h3>
+                        </a>
+                        <h3>185,000تومان</h3>
+                    </div>
+                </div>
+
+                <div> 
+                    <a href="#"><img src="Assests/Image/bd8fb17126a2f8cc96559a4990775e1107bbdd71_1641978339.webp"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>صندلی بنیزان مدل دیاموند کد B500</h3>
+                        </a>
+                        <h3>300,000تومان</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="digital">
+            <div>
+                <h3>محصولات دیجیتال</h3>
+
+                <ul>
+                    <li><a href="#">برترین ها</a></li>
+                    <li><a href="#">لوازم منزل</a></li>
+                    <li><a href="#">ساعت</a></li>
+                    <li><a href="#">موبایل</a></li>
+                    <li><a href="#">همه</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div></div> <!--class="digital-image"-->
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند Z66 Ultra</h3>
+                        </a>
+                        <h3>710,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>                  
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل SE</h3>
+                        </a>
+                        <h3>250,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند سامسونگ سیلیکونی</h3>
+                        </a>
+                        <h3>450,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل 8</h3>
+                        </a>
+                        <h3>630,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل واچ</h3>
+                        </a>
+                        <h3>510,000تومان</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="furniture">
+            <div>
+                <h3>مبلمان منزل</h3>
+
+                <ul>
+                    <li><a href="#">برترین ها</a></li>
+                    <li><a href="#">لوازم منزل</a></li>
+                    <li><a href="#">ساعت</a></li>
+                    <li><a href="#">موبایل</a></li>
+                    <li><a href="#">همه</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div></div> <!--class="furniture-image"-->
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند Z66 Ultra</h3>
+                        </a>
+                        <h3>710,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>                  
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل SE</h3>
+                        </a>
+                        <h3>250,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند سامسونگ سیلیکونی</h3>
+                        </a>
+                        <h3>450,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل 8</h3>
+                        </a>
+                        <h3>630,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل واچ</h3>
+                        </a>
+                        <h3>510,000تومان</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="beauty">
+            <div>
+                <h3>آرایشی بهداشتی</h3>
+
+                <ul>
+                    <li><a href="#">برترین ها</a></li>
+                    <li><a href="#">لوازم منزل</a></li>
+                    <li><a href="#">ساعت</a></li>
+                    <li><a href="#">موبایل</a></li>
+                    <li><a href="#">همه</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div></div> <!--class="beauty-image"-->
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند Z66 Ultra</h3>
+                        </a>
+                        <h3>710,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>                  
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل SE</h3>
+                        </a>
+                        <h3>250,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند سامسونگ سیلیکونی</h3>
+                        </a>
+                        <h3>450,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل 8</h3>
+                        </a>
+                        <h3>630,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل واچ</h3>
+                        </a>
+                        <h3>510,000تومان</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="clothing">
+            <div>
+                <h3>پوشاک</h3>
+
+                <ul>
+                    <li><a href="#">برترین ها</a></li>
+                    <li><a href="#">لوازم منزل</a></li>
+                    <li><a href="#">ساعت</a></li>
+                    <li><a href="#">موبایل</a></li>
+                    <li><a href="#">همه</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div></div> <!--class="clothing-image"-->
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند Z66 Ultra</h3>
+                        </a>
+                        <h3>710,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>                  
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل SE</h3>
+                        </a>
+                        <h3>250,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند سامسونگ سیلیکونی</h3>
+                        </a>
+                        <h3>450,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل 8</h3>
+                        </a>
+                        <h3>630,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">ساعت هوشمند</a>
+                        <a href="#">
+                            <h3>ساعت هوشمند اپل واچ</h3>
+                        </a>
+                        <h3>510,000تومان</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="categories2">
+            <div>
+                <h3>خرید بر اساس دسته بندی</h3>
+            </div>
+
+            <div>
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>الکترونیک</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>پوشاک</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>بهداشت</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>خانه</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>مبلمان</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>خوراکی</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>بازی</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>کودک</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>ورزش</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="categories2-post">
+                    <a href="#">
+                        <img src="">
+
+                        <div>
+                            <h4>خودرو</h4>
+                            <span>16 محصول</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="last-products"">
+            <div>
+                <h3>آخرین محصولات</h3>
+
+                <ul>
+                    <li><a href="#">برترین ها</a></li>
+                    <li><a href="#">لوازم منزل</a></li>
+                    <li><a href="#">ساعت</a></li>
+                    <li><a href="#">موبایل</a></li>
+                    <li><a href="#">همه</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div> <!--class="last-products-post"-->
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>مبل راحتی 8 نفره مدل نیوپیتر</h3>
+                        </a>
+                        <h3>47,000,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>مبل راحتی شش نفره مدل اریک</h3>
+                        </a>
+                        <h3>27,000,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>مبل راحتی 6 نفره لوکا مبل مدل میلان</h3>
+                        </a>
+                        <h3>5,300,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>صندلی تنیس مدل S37</h3>
+                        </a>
+                        <h3>185,000تومان</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"></a>
+
+                    <div>
+                        <a href="#">لوازم منزل</a>
+                        <a href="#">
+                            <h3>صندلی بنیزان مدل دیاموند کد B500</h3>
+                        </a>
+                        <h3>300,000تومان</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="specification">
+            <div>
+                <div><i class="fa-light fa-truck-clock"></i></div>
+
+                <div>
+                    <span>ارسال رایگان</span>
+                    <span>ارسال رایگان بالای 300 هزار تومان</span>
+                </div>
+            </div>
+
+            <div>
+                <div><i class="fa-light fa-memo-circle-check"></i></div>
+
+                <div>
+                    <span>ضمانت وجه</span>
+                    <span>بازگشت وجه تا 30 روز</span>
+                </div>
+            </div>
+
+            <div>
+                <div><i class="fa-light fa-headset"></i></div>
+
+                <div>
+                    <span>پشتیبانی آنلاین</span>
+                    <span>24 ساعت 7 روز هفته</span>
+                </div>
+            </div>
+
+            <div>
+                <div><i class="fa-light fa-money-bill-1"></i></div>
+
+                <div>
+                    <span>پرداخت آسان</span>
+                    <span>پرداخت از طریق درگاه آنلاین</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <h1>تخفیف ویژه با عضویت در خبرنامه</h1>
+
+            <div>
+                <div><input type="email" placeholder="ایمیل شما"></div>
+                <a href="#">عضویت</a>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h5>تماس با ما</h5>
+
+                <div>
+                    <div><i class="fa-sharp fa-regular fa-phone-volume"></i></div>
+                    <div>
+                        <h6>شنبه تا چهارشنبه : 8 صبح تا 6 عصر</h6>
+                        <span>09179170917</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div><i class="fa-thin fa-envelope-open-text"></i></div>
+                    <div>
+                        <h6>پشتیبانی از طریق ایمیل</h6>
+                        <span>SUPPORT@ZEOMART.COM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h5>درباره زئومارت</h5>
+                    <a href="#">رهگیری سفارش</a>
+                    <a href="#">آدرس فروشگاه</a>
+                    <a href="#">علاقه مندی ها</a>
+                    <a href="#">حریم خصوصی</a>
+                </div>
+
+                <div>
+                    <h5>خدمات مشتریان</h5>
+                    <a href="#">تماس با ما</a>
+                    <a href="#">راهنمایی</a>
+                    <a href="#">بازگشت وجه</a>
+                    <a href="#">فروشنده شوید</a>
+                </div>
+
+                <div>
+                    <h5>دسترسی سریع</h5>
+                    <a href="#">راهنمایی</a>
+                    <a href="#">شرایط و ضوابط</a>
+                    <a href="#">پیگیری سفارش</a>
+                    <a href="#">مقایسه محصولات</a>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h5>شبکه های اجتماعی</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>پرداخت از طریق</h5>
+                    <a href="#">
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+
+    </footer>
+
+
+    <script src="Assests/Js/jquery-3.7.1.js"></script>
+    <script src="Assests/Vendor/Owl-Carousel/dist/owl.carousel.js"></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            
+            "items": 5,
+            "loop": true,
+            "autoplay": true,
+            "autoplayTimeout": 3000,
+            "smartSpeed": 1000,
+            "nav": true,
+            "responsive": {
+                0: {
+                    items: 1,
+              
+                },
+                600: {
+                    items: 3,
+                 
+                },
+                1000: {
+                    items: 5,
+                   
+                    loop: false
+                }
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
