@@ -9,6 +9,6 @@ This is a exercise of a webpage [zeomart](https://demo.zeomart.ir/marketplace-3/
     - beefup [https://www.jqueryscript.net/accordion/Lightweight-jQuery-Accordion-Plugin-To-Show-Hide-Elements-BeefUp.html](https://www.jqueryscript.net/accordion/Lightweight-jQuery-Accordion-Plugin-To-Show-Hide-Elements-BeefUp.html)
 - fonts & icons
    - fontawsome [https://fontawesome.com/icons](https://fontawesome.com/icons)
-   - other fonts like "Iran Yekan"
+   - other fonts like "Iran Yekan"\
 **important stuff** :
 - jquery library : `$ Assests/Js/jquery-3.7.1.js`
