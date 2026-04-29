@@ -40,7 +40,7 @@ k
 k  
 k  
 k  
-## **This webpage includes** :
+## This webpage includes
 - html
 - css
 - jQuery (libraries)
